@@ -1,0 +1,16 @@
+# Site configuration
+description: 'a clean an minimalist theme for spresso'
+author:
+    name: 'juanma cabello'
+    twitter: 'kerunaru'
+    github: 'kerunaru'
+title: 'pure white. hopeful green'
+
+# Code highlight for <pre> and <code> tags
+# Powered by http://highlightjs.org/
+code_highlight: true
+
+# Page menus
+top_menu:
+    - { name: blog, url: "/" }
+    - { name: about, url: "/about" }

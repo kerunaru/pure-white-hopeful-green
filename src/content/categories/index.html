@@ -1,0 +1,17 @@
+---
+layout: "default"
+generator: "taxonomy"
+max_page: 1
+taxonomy_attribute: "categories"
+permalink: "/:name"
+title: "category posts"
+---
+<div class="category">
+    <i class="fa fa-folder"></i> {{ page.term }} posts only
+</div>
+
+{% for post in page.pagination.items %}
+    {% include "post.html" %}
+{% endfor %}
+
+{% include "paginator.html" %}

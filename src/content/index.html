@@ -1,0 +1,16 @@
+---
+layout: "default"
+
+generator: "pagination"
+provider: "site.posts"
+max_page: 1
+sort_by: "date"
+title: "blog"
+---
+{% for post in page.pagination.items %}
+    {% block content %}
+        {% include 'post.html' with { 'post': post } %}
+    {% endblock %}
+{% endfor %}
+
+{% include "paginator.html" %}

@@ -1,0 +1,22 @@
+<header class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <nav class="navbar navbar-light">
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+              &#9776;
+            </button>
+
+            <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+                <a class="navbar-brand" href="/">{{ site.title }}</a>
+                {% if site.top_menu | length > 0 %}
+                <ul class="nav navbar-nav">
+                    {% for link in site.top_menu %}
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{ link.url }}">{{ link.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+</header>

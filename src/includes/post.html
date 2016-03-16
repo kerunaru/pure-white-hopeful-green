@@ -1,0 +1,8 @@
+{% if page.generator != "taxonomy" %}
+    <span class="category"><i class="fa fa-folder"></i> {% for category in post.categories %}<a href="{{ site.url }}/categories/{{category}}">{{ category }}</a>{% endfor %}</span>
+{% endif %}
+<h2>
+    {{ post.title }} <small>{{ post.date | date('d/m/Y') }} </small>
+</h2>
+
+{{ post.content }}

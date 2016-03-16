@@ -1,0 +1,12 @@
+{% if page.pagination.total_pages > 1 %}
+<nav>
+  <ul class="pager">
+    <li class="pager-prev {% if not page.pagination.previous_page %}disabled{% endif %}">
+        <a {% if page.pagination.previous_page %}href="{{ site.url }}{{ page.pagination.previous_page_url }}"{% endif %}>older</a>
+    </li>
+    <li class="pager-next {% if not page.pagination.next_page %}disabled{% endif %}">
+        <a {% if page.pagination.next_page %}href="{{ site.url }}{{ page.pagination.next_page_url }}"{% endif %}>newer</a>
+    </li>
+  </ul>
+</nav>
+{% endif %}

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 75px;
+    color: #1d1f21;
+}
+
+a {
+    transition: border 0.3s ease-in, color 0.3s ease-in;
+    border-bottom: 2px solid transparent;
+    color: #b5bd68;
+}
+
+a:hover {
+    color: #b5bd68;
+    text-decoration: none;
+    border-bottom: 2px solid #8abeb7;
+}
+
+a:active {
+    position: relative;
+    top: 1px
+}
+
+a:visited {
+    color: #8abeb7;
+}
+
+main {
+    margin-top: 20px;
+}
+
+footer {
+    border-top: 1px solid #c5c8c6;
+    padding-top: 40px;
+    margin-top: 40px;
+    background-color: #e0e0e0;
+    height: 250px;
+}
+
+code {
+    background-color: #373b41;
+    color: #e0e0e0;
+    border-radius: .25rem;
+    font-size: 11px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    padding: .25rem;
+    background-color: #e0e0e0;
+    border: 1px solid #c5c8c6;
+    border-radius: .25rem;
+}
+
+h2 small {
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+article {
+    text-align: justify;
+}
+
+.category {
+    color: #e0e0e0;
+}
+
+.pager li > a {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: .25rem;
+}
+
+.pager li > a:hover {
+    border: 1px solid #8abeb7;
+    background-color: #ffffff;
+}
+
+@media (max-width: 33.9em) {
+    body {
+        margin-top: inherit;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "name": "kerunaru/pure-white-hopeful-green",
+    "description": "a minimalism theme for spress",
+    "license": "MIT",
+    "type": "spress-theme",
+    "require": {
+            "spress/spress-installer": "2.0.*"
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ site.description }}">
+        <meta name="author" content="{{ site.author.name }}">
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <link href="{{ site.url }}/rss.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} Feed">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            {% include 'header.html' %}
+            <main class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    {% block content %}
+                        <div class="container">
+                            <article>
+                                {{ page.content }}
+                            </article>
+                        </div>
+                    {% endblock %}
+                </div>
+            </main>
+            {% include 'footer.html' %}
+        </div>
+        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    </body>
+</html>
